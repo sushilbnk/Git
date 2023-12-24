@@ -49,5 +49,5 @@ git remote add origin https://github.com/sushilbnk/Git.git
 git branch -M main
 git push -u origin main
 
-
+TO CHECK THE REMOTE ORIGIN : git remote -v
 
