@@ -1,0 +1,53 @@
+-> it is a Distributed version control.
+-->local version control
+   (data is saved locally and if the system goes down we won't be able to access)
+-->centralized version control system
+   1.(will have a centralized repository where multiple people can work remotely and save data in there)
+   2. If the remote server goes down we won't be able to access the older version, since in our local we will have               the recent version
+
+-->Distributed Version contol
+   1.Here we will have the local copy with the version histroy as well as we can collaborate with others
+
+
+Understanding : here we will have 2 repo's- local repository and remote repository. And they have to be created individual and later we link them depending on requirement.
+
+---> Install Git and setup
+
+Further you need to have the identities to confirm who is working , creating , and commiting. Hence, for that we use "git config"
+
+To list what all identites we have in the repo use command:"git config --global --list"
+
+creating new config:
+git config --global user.name "sushilbnk"
+git config --global user.email "sushilbanka84@gmail.com"
+
+
+Working directory --> Staging Area --> Commit
+
+which ever files you create in the repo(working directory) isn't been handled by git. Git tracks the files which are only added in the staging area.
+
+Every time when you commit it becomes a new version.
+
+TO CREATE A GIT REPOSITORY : "git init"
+
+to delete the git repo, you can just delete the .git file on the folder.
+
+create a file GitNotes.txt in the folder, now this is in the working directory but not in the staging area. Hence, to add to staging area you need to use the git add command.
+
+ADDING TO STAGING AREA: "git add <filename>"
+UNSTAGE THE FILE      : "git rm --cached <file>..."
+COMMITING FILES       :  git commit -m "messgae"
+COMMIT HISTORY        :  git log
+
+Every time you make changes to any file which is in staging area it will be brought back to working directory with the modified status.
+
+SKIP STAGE AND COMMIT : git commit -a -m "message"
+TO COMPARE AND CHECK  : git diff
+
+PUSH AN EXISTING REPO FROM THE COMMAND LINE:
+git remote add origin https://github.com/sushilbnk/Git.git
+git branch -M main
+git push -u origin main
+
+
+
