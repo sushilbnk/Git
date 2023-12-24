@@ -1,38 +1,39 @@
--> it is a Distributed version control.
--->local version control
-   (data is saved locally and if the system goes down we won't be able to access)
--->centralized version control system
-   1.(will have a centralized repository where multiple people can work remotely and save data in there)
-   2. If the remote server goes down we won't be able to access the older version, since in our local we will have               the recent version
+-> GIT operates as a form of distributed version control.
 
--->Distributed Version contol
-   1.Here we will have the local copy with the version histroy as well as we can collaborate with others
+-> In a local version control system:
+     Information is stored locally, and if the system experiences downtime, accessibility is compromised.
 
+-> In centralized version control system:
+      1.Involves a centralized repository where multiple individuals can work remotely and store data.
+      2.In the event of a remote server failure, access to older versions becomes impossible, as the recent version is stored locally.
+ 
+-> Hence, Git utilizes a Distributed Version Control model.
+      In this setup, a local copy with version history is maintained, allowing collaboration with others remotely.
 
-Understanding : here we will have 2 repo's- local repository and remote repository. And they have to be created individual and later we link them depending on requirement.
+Insight: In this context, we establish two repositories – a local repository and a remote repository. Each needs to be created independently, and subsequently, we connect them based on specific needs.
 
----> Install Git and setup
+Install Git and setup
 
 Further you need to have the identities to confirm who is working , creating , and commiting. Hence, for that we use "git config"
 
 To list what all identites we have in the repo use command:"git config --global --list"
 
-creating new config:
+CREATING NEW CONFIG:
 git config --global user.name "sushilbnk"
 git config --global user.email "sushilbanka84@gmail.com"
 
 
-Working directory --> Staging Area --> Commit
+STEPS: Working directory --> Staging Area --> Commit
 
-which ever files you create in the repo(working directory) isn't been handled by git. Git tracks the files which are only added in the staging area.
-
-Every time when you commit it becomes a new version.
+Any files you generate within the repository's working directory are not automatically managed by Git. Git exclusively tracks files that have been added to the staging area.
+Each commit represents a new version of the project.
 
 TO CREATE A GIT REPOSITORY : "git init"
 
-to delete the git repo, you can just delete the .git file on the folder.
+To delete the Git repository, simply remove the .git file from the folder.
 
-create a file GitNotes.txt in the folder, now this is in the working directory but not in the staging area. Hence, to add to staging area you need to use the git add command.
+For instance, if you create a file named GitNotes.txt in the folder, it exists in the working directory but is not yet part of the staging area.
+Therefore, to include it in the staging area, you must use the git add command.
 
 ADDING TO STAGING AREA: "git add <filename>"
 UNSTAGE THE FILE      : "git rm --cached <file>..."
