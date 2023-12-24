@@ -51,3 +51,13 @@ git push -u origin main
 
 TO CHECK THE REMOTE ORIGIN : git remote -v
 
+FOR CLONING A PRJ : git clone <remote URL>
+
+Branches:
+
+Its the most important feature for git , as it gives us the ability to work individually and have the best version control.
+
+TO CREATE BRANCH            : git switch -c "branch name"
+TO CHECK AVAIL BRANCHES     : git branch
+TO SWITCH TO OTHER BRANCHES : git switch 
+TO SEE BOTH LOCAL & REMOTE BRANCHES : git branch --all
