@@ -1,0 +1,1 @@
+This notes is a simple Understanding of git whereas main is professional notes.
