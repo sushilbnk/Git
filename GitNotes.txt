@@ -57,7 +57,11 @@ Branches:
 
 Its the most important feature for git , as it gives us the ability to work individually and have the best version control.
 
-TO CREATE BRANCH            : git switch -c "branch name"
-TO CHECK AVAIL BRANCHES     : git branch
-TO SWITCH TO OTHER BRANCHES : git switch 
+TO CREATE BRANCH                    : git switch -c "branch name"
+TO CHECK AVAIL BRANCHES             : git branch
+TO SWITCH TO OTHER BRANCHES         : git switch 
 TO SEE BOTH LOCAL & REMOTE BRANCHES : git branch --all
+PUSH NEW BRANCH TO REMOTE REPO      : git push origin Sushil
+TO PULL THE BRANCH FROM REMOTE REPO : git pull origin main // so if any collaborators make changes we have them before merging
+MERGING BRANCHES                    : git merge <branch name>
+
